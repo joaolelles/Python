@@ -1,6 +1,7 @@
 # Operações básicas
 # Exercício 1a = 10
 b = 5
+a = 10
 
 print(a + b)
 # 15
@@ -83,7 +84,7 @@ my_array = [20, 20, 1, 2]
 freq_dict = {}
 
 for item in my_array:
-    if (item in freq_dict):
+    if item in freq_dict:
         freq_dict[item] += 1
     else:
         freq_dict[item] = 1
@@ -92,6 +93,30 @@ for key, valor in freq_dict.items():
     print(f"{key} : {valor}")
 
 # Saída
-20: 2
-1: 1
-2: 1
+# 20: 2
+# 1: 1
+# 2: 1
+
+# Exercício 12
+number = 5
+counter = 1
+result = 1
+
+while counter <= number:
+    result = result * counter
+    counter += 1
+result
+
+# Exercício 13
+ratings = [6, 8, 5, 9, 10]
+new_ratings = []
+for rating in ratings:
+    new_ratings.append(rating * 10)
+print(new_ratings)
+
+# Exercício 14
+ratings = [6, 8, 5, 9, 10]
+for rating in ratings:
+    # o sinal % representa a operação "resto".
+    if (rating % 3) == 0:
+        print(f"{rating} é múltiplo de 3")

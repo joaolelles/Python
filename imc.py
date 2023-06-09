@@ -15,4 +15,4 @@ def imc(peso, altura):
         print("Obesidade III")
 
 
-imc(85, 189)
+imc(47, 162)

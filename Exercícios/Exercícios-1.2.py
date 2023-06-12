@@ -25,7 +25,9 @@ recuperacao = []
 with open("alunos_notas.txt", "r") as notas:
     for linha in notas:
         aluno = linha
+        print(aluno)
         aluno = aluno.split(" ")
+        print(aluno)
         if int(aluno[1]) < 6:
             recuperacao.append(aluno[0] + "\n")
 

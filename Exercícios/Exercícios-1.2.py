@@ -17,3 +17,18 @@ for num in nums_arr:
         sum += int(num)
 
 print(f"A soma dos valores válidos é: {sum}")
+
+# Lidando com exceções
+# Exercício 3:
+recuperacao = []
+
+with open("alunos_notas.txt", "r") as notas:
+    for linha in notas:
+        aluno = linha
+        aluno = aluno.split(" ")
+        if int(aluno[1]) < 6:
+            recuperacao.append(aluno[0] + "\n")
+
+with open("alunos_rec.txt", "w") as rec:
+    print(recuperacao)
+    rec.writelines(recuperacao)
